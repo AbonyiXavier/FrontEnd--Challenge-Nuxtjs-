@@ -1,0 +1,30 @@
+<template>
+  <div>
+    <h1>product #{{ id }}</h1>
+  </div>
+</template>
+
+<script>
+import { mapState } from "vuex";
+export default {
+  async fetch({ store, error, params }) {
+    try {
+      await store.dispatch("fetchProduct", params.id);
+    } catch (error) {
+      error({
+        statusCode: 503,
+        message: "Unable to fetch product #" + params.id
+      });
+    }
+  },
+
+  computed: {
+    id() {
+      return this.$route.params.id;
+    }
+  }
+  //   computed: mapState({
+  //     product: state => state.products.product
+  //   })
+};
+</script>

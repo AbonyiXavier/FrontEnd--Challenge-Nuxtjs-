@@ -1,0 +1,55 @@
+<template>
+  <div>
+    <div class="slider">
+      <carousel-3d
+        :controls-visible="true"
+        :controls-prev-html="'&#10092;'"
+        :controls-next-html="'&#10093;'"
+        :controls-width="30"
+        :controls-height="60"
+        :clickable="false"
+        :count="events.length"
+      >
+        <slide v-for="(event, i) in events" :index="i" :key="i">
+          <figure>
+            <img v-bind:src="event.images" />
+          </figure>
+        </slide>
+      </carousel-3d>
+    </div>
+  </div>
+</template>
+
+<script>
+import { Carousel3d, Slide } from "vue-carousel-3d";
+export default {
+  name: "Home page",
+  components: {
+    Carousel3d,
+    Slide
+  },
+  data() {
+    return {
+      events: []
+    };
+  },
+  created() {
+    var vm = this;
+    setTimeout(function() {
+      vm.events = [
+        {
+          images: "http://placehold.jp/150x150.png"
+        },
+        {
+          images: "http://placehold.jp/160x160.png"
+        },
+        {
+          images: "http://placehold.jp/170x170.png"
+        }
+      ];
+    }, 2000);
+  }
+};
+</script>
+
+<style scoped></style>
