@@ -2,27 +2,28 @@
   <div>
     <Carousel />
     <div>
-      <h1 class="mt-5">Product merchants</h1>
+      <h1 class="mt-5">Product Merchants</h1>
       <div class="mb-5">
         <!-- <input
           type="text"
           v-model="search"
           placeholder="Search product.."
           @keyup="getProductSearch"
-        /> -->
-      </div>
-      <v-select
+        />
+      </div> -->
+        <!-- <v-select
         v-model="sortSelected"
         :items="items"
         label="Sort product by Descending and Ascending"
         solo
-      ></v-select>
-      <div>
-        <v-row>
-          <v-col v-for="(product, index) in allProducts" :key="index">
-            <ProductCard :product="product" :data-index="index" />
-          </v-col>
-        </v-row>
+      ></v-select> -->
+        <div>
+          <v-row>
+            <v-col v-for="(product, index) in allProducts" :key="index">
+              <ProductCard :product="product" :data-index="index" />
+            </v-col>
+          </v-row>
+        </div>
       </div>
     </div>
   </div>

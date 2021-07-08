@@ -24,14 +24,15 @@ export const mutations = {
 export const actions = {
   fetchProducts({ commit }) {
     return ProductService.getProducts().then(response => {
-      console.log("data", response.data);
-      commit("SET_PRODUCTS", response.data);
+      // console.log("fetch data", response);
+      // console.log("data", response.data.products);
+      commit("SET_PRODUCTS", response.data.products);
     });
   },
   fetchProduct({ commit }, id) {
     return ProductService.getProduct(id).then(response => {
-      console.log("data 2", response);
-      commit("SET_PRODUCT", response.data);
+      console.log("data 2", response.data.products);
+      commit("SET_PRODUCT", response.data.products);
     });
   },
   fetchProductDesc({ commit }) {
@@ -58,9 +59,11 @@ export const getters = {
     });
   },
   productDetail: state => id => {
-    console.log(id);
+    console.log("id", id);
     const foundProduct = state.products.find(product => {
-      return product.id === id;
+      console.log("product", product);
+      // console.log("product", product.id);
+      return product._id === id;
     });
     return foundProduct;
   },

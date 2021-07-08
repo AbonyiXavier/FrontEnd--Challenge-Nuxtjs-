@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: `https://fakestoreapi.com`,
+  baseURL: `https://coulture-backend.herokuapp.com/api`,
   withCredentials: false,
   headers: {
     Accept: "application/json",
