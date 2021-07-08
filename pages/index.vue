@@ -2,7 +2,7 @@
   <div>
     <Carousel />
     <div>
-      <h1 class="mt-5">Iblcouture Products</h1>
+      <h1 class="mt-5">Iblcouture store</h1>
       <div class="mb-3">
         <!-- <input
           type="text"
