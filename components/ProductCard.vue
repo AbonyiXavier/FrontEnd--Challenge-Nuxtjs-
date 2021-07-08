@@ -14,7 +14,7 @@
             </template>
 
             <v-img
-              height="250"
+              height="800"
               :src="`https://coulture-backend.herokuapp.com/${product.photo}`"
             ></v-img>
 
