@@ -2,8 +2,8 @@
   <div>
     <Carousel />
     <div>
-      <h1 class="mt-5">Product Merchants</h1>
-      <div class="mb-5">
+      <h1 class="mt-5">Iblcouture Products</h1>
+      <div class="mb-3">
         <!-- <input
           type="text"
           v-model="search"
