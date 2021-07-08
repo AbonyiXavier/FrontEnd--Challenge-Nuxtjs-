@@ -61,7 +61,7 @@ export const getters = {
   productDetail: state => id => {
     console.log("id", id);
     const foundProduct = state.products.find(product => {
-      console.log("product", product);
+      console.log("product", product._id);
       // console.log("product", product.id);
       return product._id === id;
     });
