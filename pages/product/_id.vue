@@ -141,7 +141,7 @@ export default {
   methods: {
     payWithPaystack() {
       var handler = PaystackPop.setup({
-        key: "pk_live_06f80e830d0f61b21d5aa787367a99784d05cf3e", // live key
+        key: process.env.PAYSTACK_KEY, // live key
         email: this.email,
         phone: this.phone,
         full_name: this.full_name,

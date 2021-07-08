@@ -16,6 +16,7 @@
     "vue-paystack": "^2.0.4"
   },
   "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/vuetify": "^1.11.2"
   }
 }

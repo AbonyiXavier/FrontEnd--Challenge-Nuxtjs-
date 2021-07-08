@@ -1,4 +1,5 @@
 // import colors from "vuetify/es5/util/colors";
+require("dotenv").config();
 
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -26,6 +27,8 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
+    "@nuxtjs/dotenv",
+
     "@nuxtjs/vuetify"
   ],
 
