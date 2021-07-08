@@ -3,7 +3,9 @@ require("dotenv").config();
 
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
-
+  env: {
+    key: process.env.PAYSTACK
+  },
   head: {
     titleTemplate: "%s - e-commerce",
     title: "e-commerce",
