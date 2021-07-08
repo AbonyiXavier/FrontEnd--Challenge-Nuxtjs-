@@ -36,7 +36,10 @@
             <strong> Iblcouture </strong>— <strong>store</strong>
           </v-col>
           <v-col class="py-4 text-center lighten-2 white--text" cols="12">
-            Contact — <strong>+234 806 577 1943</strong>
+            Contact —
+            <strong
+              ><a a href="tel:+234 806 577 1943">+234 806 577 1943</a></strong
+            >
           </v-col>
           <v-col class="py-4 text-center lighten-2 white--text" cols="12">
             {{ new Date().getFullYear() }}
