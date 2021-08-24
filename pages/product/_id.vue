@@ -11,10 +11,8 @@
             ></v-progress-linear>
           </template>
 
-          <v-img
-            height="800"
-            :src="`https://coulture-backend.herokuapp.com/${product.photo}`"
-          ></v-img>
+          <!-- :src="`https://coulture-backend.herokuapp.com/${product.photo}`" -->
+          <v-img height="800" :src="`${product.photo}`"></v-img>
 
           <v-card-title>
             <span> Product title: </span>
